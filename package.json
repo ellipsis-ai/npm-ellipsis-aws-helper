@@ -1,6 +1,6 @@
 {
   "name": "ellipsis-aws-helper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An Npm package to help interacting with the AWS APIs.",
   "main": "index.js",
   "scripts": {
