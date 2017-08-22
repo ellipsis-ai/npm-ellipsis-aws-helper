@@ -16,13 +16,17 @@ const awsHelper = new EllipsisAws.Helper();
 
 var region = process.env.AWS_REGION;
 
-if (!awsHelper.validateRegion(region)) {
+awsHelper.validateRegion(region)
+.then(valid => {
   console.log(`Unknown region '${region}'`);
-}
-
-awsHelper.validateAccessToApi()
+  if (valid) return awsHelper.validateAccessToApi();
+  else throw new Error("Invalid region");
+})
 .then((result) => {
   // do something awesome!
+})
+.catch(err => {
+  // do something super awesome!
 })
 ```
 
