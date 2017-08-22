@@ -1,6 +1,11 @@
 # npm-ellipsis-aws-helper
 An Npm package to help interacting with the AWS APIs.
 
+# Installation
+```bash
+$ npm install ellipsis-aws-helper@latest --save
+```
+
 # Usage
 ```javascript
 

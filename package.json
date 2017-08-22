@@ -1,6 +1,6 @@
 {
   "name": "ellipsis-aws-helper",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "An Npm package to help interacting with the AWS APIs.",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,13 @@
   "dependencies": {
     "aws-sdk": "2.102.0",
     "moment-timezone": "0.5.13"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ellipsis-ai/npm-ellipsis-aws-helper.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/ellipsis-ai/npm-ellipsis-aws-helper/issues"
   },
   "devDependencies": {
     "aws-sdk-mock": "1.7.0",
