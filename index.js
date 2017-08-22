@@ -41,12 +41,6 @@ class Helper {
     this.userTimeZone = config.userTimeZone || "UTC";
   }
 
-  setAwsConfig(newAwsConfig) {
-    this.config = newConfig;
-    AWS.config.update(this.config);
-    return this.config;
-  }
-
   validateRegion(region) {
     return !!(region in validRegions);
   }
