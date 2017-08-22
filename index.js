@@ -42,7 +42,7 @@ class Helper {
   }
 
   validateRegion(region) {
-    return !!(region in validRegions);
+    return Promise.resolve(!!(region in validRegions));
   }
 
   validateAccessToApi() {

@@ -9,11 +9,11 @@ const config = {};
 describe("validateRegion", () => {
   it("returns true when region is valid", () => {
     const ah = new EllipsisAWS.Helper();
-    expect(ah.validateRegion("us-east-1")).toBe(true);
-    expect(ah.validateRegion("us-est-1")).toBe(false);
-    expect(ah.validateRegion("")).toBe(false);
-    expect(ah.validateRegion(1)).toBe(false);
-    expect(ah.validateRegion("us-est-1-090asd")).toBe(false);
+    ah.validateRegion("us-east-1").then(result => expect(result).toBe(true));
+    ah.validateRegion("us-est-1").then(result => expect(result).toBe(false));
+    ah.validateRegion("").then(result => expect(result).toBe(false));
+    ah.validateRegion(1).then(result => expect(result).toBe(false));
+    ah.validateRegion("us-east-1sadasd").then(result => expect(result).toBe(false));
   });
 });
 
